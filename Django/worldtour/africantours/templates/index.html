@@ -8,6 +8,11 @@
   <body>
     <div>
       <h1>This is a list of African Tours</h1>
+      <ul>
+        {% for tour in tours %}
+        <li>{{tour.country}}</li>
+        {% endfor %}
+      </ul>
     </div>
   </body>
 </html>

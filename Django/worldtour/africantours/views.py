@@ -1,5 +1,8 @@
 from django.shortcuts import render
+from .models import Afrotours
 
 # Create your views here.
 def index(request):
-    return render(request, "index.html")
+    tours = Afrotours.objects.all()
+    context = {"tours": tours}
+    return render(request, "index.html", context)
