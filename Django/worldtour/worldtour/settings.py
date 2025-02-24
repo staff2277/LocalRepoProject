@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'africatours',
     'asiantours',
+    'russiatours',
 ]
 
 MIDDLEWARE = [
