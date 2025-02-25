@@ -9,6 +9,9 @@
   </head>
   <body>
     <h1>CONTACT</h1>
-    {% csrf_token %} {{form.as_p}}
+    <form action="{% url 'contactSucess_page' %}" method="POST">
+      {% csrf_token %} {{form.as_p}}
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
