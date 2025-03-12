@@ -11,6 +11,7 @@
     <h1>Contact</h1>
     <form action="{% url 'contactSuccess' %}" method="POST">
       {% csrf_token %} {{form.as_p}}
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>
