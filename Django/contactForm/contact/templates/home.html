@@ -1,11 +1,16 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}" />
     <title>Home</title>
   </head>
   <body>
     <h1>Home Page</h1>
+    <img src="{% static 'images/ai10.jpg'%}" alt="image" />
+    <a href="{% url 'contact' %}"><button>Contact Page</button></a>
+    <link rel="stylesheet" href="{% static 'js/script.js' %}" />
   </body>
 </html>
