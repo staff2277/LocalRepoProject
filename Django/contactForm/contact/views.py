@@ -5,6 +5,7 @@ from .forms import ContactForm
 def home(request):
     return render(request, "home.html" )
 
+def contactSucess(request):
     return render(request, "contactSuccess.html" )
 
 
