@@ -15,6 +15,7 @@ def contactPage(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             print(form.cleaned_data)
+            return redirect("contactSuccess")
         
     context = {"form": form}
     return render(request, "contact.html", context )
