@@ -18,5 +18,4 @@ def contactPage(request):
             return redirect("contactSuccess")
         
     context = {"form": form}
-    return render(request, "contact.html", context )
 
